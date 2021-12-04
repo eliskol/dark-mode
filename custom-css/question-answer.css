@@ -1,0 +1,384 @@
+body {
+    background: #1d1f21;
+}
+
+p {
+    font-size: 14px;
+}
+
+div#sidebar {
+    position: fixed;
+    top: 80px; 
+    width: 300px;
+    padding: 15px;
+    background: #2C2F33;
+    border: 1px solid rgb(224, 224, 224);   
+}
+
+#courseName {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(96, 96, 96);
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    margin-bottom: 10px;  
+}
+
+div#topic {
+    color: #c5c8c6;
+    margin-top: 10px;    
+    font-size: 14px;
+    /* background: white; */
+}
+
+a.topicLink {
+    /* color: rgb(104, 104, 104); */
+    color: #c5c8c6;
+}
+
+div#prerequisitesHeader {
+    margin-top: 40px;    
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(9, 107, 183);
+}
+
+div.prerequisite {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a.prerequisiteLink {
+    /* color: rgb(104, 104, 104); */
+    color: #c5c8c6;
+}
+
+a.topicLink:hover {
+
+}
+
+a.topicSelectedLink {
+    color: rgb(64, 64, 64);
+}
+
+a.topicSelectedLink:hover {
+
+}
+
+div#assignmentTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(9, 107, 183);
+}
+
+div#progressBarFrame {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-top: 40px;
+    width: 295px;
+    height: 7px;
+    background: white;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+div#progressBar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 7px;
+    background: rgb(9, 107, 183);
+}
+
+div#questionAnswerContainer {
+    margin-top: 10px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+    background: #2C2F33;
+}
+
+div#questionAnswerFrame {
+    position: relative;
+    width: 698px;
+    background: #2C2F33;
+    border: 1px solid rgb(224, 224, 224);
+    padding: 15px;
+    margin: 0px;
+    margin-top: 2px;
+}
+
+div#questionContainer {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 700px;
+    /* background: #2C2F33; */
+    display: none;
+}
+
+div#questionTopic {
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.questionTopicLink {
+    color: rgb(9, 107, 183);
+}
+
+.questionTopicLink:hover {
+    text-decoration: underline;
+}
+
+.questionTopicLink:hover, 
+.questionTopicLink:visited,
+.questionTopicLink:active {
+    color: rgb(30, 25, 78);
+    text-decoration: none;;
+}
+
+div#answerContainer {
+    position: relative;
+    display: none;
+    left: 0px;
+    top: 0px;
+    width: 700px;    
+    background: white;
+    margin-top: 30px;
+}
+
+div#questionGraphicFrame {
+    padding-bottom: 15px;
+}
+
+img#questionGraphic {
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+.mjx-chtml .MathJax_CHTML {
+    font-size: 119% !important;  
+}
+
+#questionText {
+    color: #c5c8c6;
+    width: 610px;
+    font-size: 14px;
+}
+
+table#choicesTable {
+    width: 695px;
+    margin-top: 20px;
+}
+
+td.choiceLetter {
+    width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.choiceLetterCircle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background : white;
+    color: rgb(64, 64, 64);         
+}
+
+div.selectedChoice {
+    background : rgb(64, 64, 64);
+    color: white;
+}
+
+div.correctChoice {
+    background : rgb(164, 164, 164);
+    color: white;
+}
+
+span.choiceLetterText {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    user-select: none;
+}
+
+td.choiceText {
+    padding-left: 10px;
+    font-size: 14px;
+    cursor: default;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div#freeResponseFrame {
+    margin-top: 30px;
+}
+
+input#freeResponseInput {
+    border: 1px solid rgb(224, 224, 224);
+    font-size: 14px;
+    outline: none;
+    height: 25px;
+    width: 50px;
+}
+
+input[type="text"][disabled] {
+    border: 1px solid rgb(9, 107, 183);
+    color: rgb(64, 64, 64);
+}
+
+div#questionButtons {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    height: 40px;
+}
+
+div#answer {
+    width: 610px;   
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+div#explanationHeader {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(30, 25, 78);
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgb(224, 224, 224);
+    margin-bottom: 25px;
+}
+
+div#explanation {
+    width: 610px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+div.graphic {
+    text-align: center;    
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+}
+
+div.additionalExplanation {
+    margin-top: 25px;
+}
+
+div#needHelpButton {
+    position: absolute;
+    left: 75px;
+    bottom: 32px;    
+}
+
+div#skipButton {
+    display: inline-block;
+    text-align: center;
+    margin-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    width: 82px;
+    background: white;
+    color: rgb(64, 64, 64);
+    border: 1px rgb(224, 224, 224) solid;
+    cursor: pointer;
+    user-select: none;    
+}
+
+button#submitAnswerButton {
+    display: inline-block;
+    text-align: center;
+    left: 0px;
+    top: 25px;
+    width: 82px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 17px;
+    font-size: 12px;
+    cursor: pointer; 
+    user-select: none;
+    border: none;
+}
+
+button.submitAnswerButtonEnabled {
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+}
+
+button.submitAnswerButtonDisabled {
+    background: rgb(204, 204, 204);
+    color: rgb(248, 248, 248);
+}
+
+div#answerButtons {
+    position: relative;
+    padding-top: 20px;
+    border-top: 1px solid rgb(224, 224, 224);
+    height: 35px;
+    margin-top: 35px;
+}
+
+div#flagQuestionButton {
+    position: absolute;
+    right: 85px;
+    text-align: center;
+    margin-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+    font-size: 12px;
+    width: 82px;
+    background: white;
+    color: rgb(64, 64, 64);
+    border: 1px rgb(224, 224, 224) solid;
+    cursor: pointer;
+    user-select: none; 
+}
+
+div#nextQuestionButton {
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    width: 82px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 17px;
+    font-size: 12px;
+    cursor: pointer; 
+    user-select: none;
+    border: none;  
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);
+}
+
+div#doneButton {
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    width: 82px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 17px;
+    font-size: 12px;
+    cursor: pointer; 
+    user-select: none;
+    border: none;  
+    background: rgb(9, 107, 183);
+    color: rgb(248, 248, 248);   
+}
