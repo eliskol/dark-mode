@@ -90,7 +90,7 @@ const http = require('http'),
         }
 
         // HTTP(S) proxy.
-        if (req.url.startsWith(config.prefix)) return proxy.http(req, res);
+        else if (req.url.startsWith(config.prefix)) return proxy.http(req, res);
 
         req.pathname = req.url.split('#')[0].split('?')[0];
         req.query = {};
